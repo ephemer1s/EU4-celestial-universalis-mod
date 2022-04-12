@@ -413,7 +413,7 @@ mild_monsoon = {
 	671 2174 # Hunan
 	682 2172 4197 # Hubei
 	686 2146 2147 # south Anhui
-	685 1821 1822 2145 # South Jiangsu
+	685 1821 1822 2145 8002 8003 8004 8005 8006 8007 8008 # South Jiangsu
 	1113 1116 # Jolof
 	1120 1121 1124 2248 # Manding
 	1123 2249 2250 # Massina
@@ -514,7 +514,7 @@ normal_monsoon = {
 	733 735 4230 4231 # Western Korea
 	734 736 2694 2745 4227 # Eastern Korea
 	737 1013 2741 4228 4229 # Southern Korea
-	667 668 2156 2157 2158 # Guangdong
+	667 668 2156 2157 2158 8001 # Guangdong
 	665 666 2159 2160 2161  # West Guangdong
 	669 1829 2152 2153 # Fujian
 	670 683 1833 2151 # Jiangxi

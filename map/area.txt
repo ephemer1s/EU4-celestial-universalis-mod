@@ -2770,19 +2770,19 @@ shandong_area = { #5
 }
 
 jiangsu_area = { #3
-	2141 2142 4196
+	2141 2142 4196 685 8004 8005 8006
 }
 
 south_jiangsu_area = { #4
-	685 1821 1822 2145
+	1821 1822 2145 8002 8003
 }
 
 anhui_area = { #3 (North Anhui)
-	1838 2143 2144
+	1838 2143 2144 8007
 }
 
 south_anhui_area = { #3
-	686 2146 2147
+	686 2146 2147 8008
 }
 
 zhejiang_area = { #5
@@ -2802,7 +2802,7 @@ taiwan_area = { #3
 }
 
 guangdong_area = { #5
-	667 668 2156 2157 2158
+	667 668 2156 2157 2158 8001
 }
 
 west_guangdong_area = { #5
