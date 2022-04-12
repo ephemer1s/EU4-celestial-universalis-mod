@@ -3,16 +3,16 @@
 owner = MNG
 controller = MNG
 add_core = MNG
-culture = zhongyuan
+culture = jianghuai
 religion = confucianism
 capital = "Fengyang"
-trade_goods = silk
+trade_goods = cloth
 hre = no
 base_tax = 2 
 base_production = 1
 base_manpower = 2
 is_city = yes
-
+fort_15th = yes # zhongdu liushou si
 
 
 discovered_by = chinese
