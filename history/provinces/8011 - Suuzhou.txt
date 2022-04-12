@@ -5,12 +5,12 @@ controller = MNG
 add_core = MNG
 culture = zhongyuan
 religion = confucianism
-capital = "Fengyang"
-trade_goods = silk
+capital = "Suuzhou"
+trade_goods = grain  # Change to Marble after
 hre = no
 base_tax = 2 
-base_production = 1
-base_manpower = 1
+base_production = 2
+base_manpower = 2
 is_city = yes
 
 

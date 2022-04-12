@@ -5,11 +5,11 @@ controller = MNG
 add_core = MNG
 culture = jianghuai
 religion = confucianism
-capital = "Anqing"
-trade_goods = cloth
+capital = "Chizhou"
+trade_goods = tea
 hre = no
-base_tax = 6 
-base_production = 6
+base_tax = 5 
+base_production = 5
 base_manpower = 2
 is_city = yes
 

@@ -5,11 +5,14 @@ controller = MNG
 add_core = MNG
 culture = wu
 religion = confucianism
-capital = "Jinhua"
-trade_goods = grain
+capital = "Quzhou"
+trade_goods = iron  # change to gypsum
+latent_trade_goods = {
+	coal
+}
 hre = no
-base_tax = 3 
-base_production = 3
+base_tax = 4 
+base_production = 4
 base_manpower = 2
 is_city = yes
 add_core = WUU

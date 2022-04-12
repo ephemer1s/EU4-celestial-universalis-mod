@@ -5,15 +5,16 @@ controller = MNG
 add_core = MNG
 culture = zhongyuan
 religion = confucianism
-capital = "Fengyang"
-trade_goods = silk
+capital = "Huainan"
+trade_goods = grain
+latent_trade_goods = {
+	coal
+}
 hre = no
-base_tax = 2 
-base_production = 1
-base_manpower = 1
+base_tax = 4
+base_production = 4
+base_manpower = 4
 is_city = yes
-
-
 
 discovered_by = chinese
 discovered_by = nomad_group
