@@ -2827,10 +2827,12 @@ ngari_area = { #3
 
 hebei_area = { #4 (North Hebei)
 	703 1816 2136 4194
+	8043 8044
 }
 
 south_hebei_area = { #4
-	695 696 2137 4195
+	695 696 2137 4195 
+	8041 8042
 }
 
 shandong_area = { #5
