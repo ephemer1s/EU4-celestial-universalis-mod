@@ -1,4 +1,5 @@
 name="Oriental Universalis"
+path="mod/eu4-ming-granularitation-mod"
 dependencies={}
 tags={
 	"Map"
