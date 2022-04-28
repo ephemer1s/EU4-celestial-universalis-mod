@@ -1,16 +1,16 @@
-# 2181 - Pingliang
+# 2182 - Liangzhou
 
 owner = MNG
 controller = MNG
 add_core = MNG
 culture = xibei
 religion = confucianism
-capital = "Pingliang"
+capital = "Liangzhou"
 trade_goods = livestock
 hre = no
 base_tax = 2
 base_production = 1
-base_manpower = 2
+base_manpower = 1
 is_city = yes
 add_core = CSH
 discovered_by = chinese
