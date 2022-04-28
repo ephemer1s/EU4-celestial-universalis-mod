@@ -1,9 +1,8 @@
-# 2153 - Tingzhou
 
 owner = MNG
 controller = MNG
 add_core = MNG
-culture = min
+culture = chimin
 religion = confucianism
 capital = "Yanping"
 trade_goods = tea

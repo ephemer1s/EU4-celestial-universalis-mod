@@ -3,15 +3,14 @@
 owner = MNG
 controller = MNG
 add_core = MNG
-add_core = CMI
 culture = xiang
-religion = animism
+religion = confucianism
 capital = "Hengyang"
-trade_goods = gold
+trade_goods = spices
 hre = no
-base_tax = 3 
-base_production = 3
-base_manpower = 3
+base_tax = 5 
+base_production = 5
+base_manpower = 2
 is_city = yes
 add_core = CHC
 
