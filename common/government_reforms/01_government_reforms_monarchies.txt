@@ -50,11 +50,14 @@ celestial_empire = {
 		church_influence_modifier = -0.1
 		nobles_influence_modifier = -0.1
 		burghers_influence_modifier = -0.1
-		governing_capacity = 1000
+		governing_capacity = 1600
 		yearly_corruption = 1
 		land_forcelimit_modifier = -0.5
+		land_maintenance_modifier = 1
 		garrison_size = 0.5
-		
+		min_autonomy = 25
+		trade_efficiency = -0.25
+		tolerance_heathen = -3
 	}
 	
 	ai = {
