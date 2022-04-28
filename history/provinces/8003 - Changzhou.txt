@@ -8,8 +8,8 @@ religion = confucianism
 capital = "Changzhou"
 trade_goods = silk
 hre = no
-base_tax = 11
-base_production = 11
+base_tax = 10
+base_production = 10
 base_manpower = 4
 is_city = yes
 

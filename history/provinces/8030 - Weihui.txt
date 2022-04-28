@@ -3,7 +3,7 @@
 owner = MNG
 controller = MNG
 add_core = MNG
-culture = chihan
+culture = zhongyuan
 religion = confucianism
 capital = "Weihui"
 trade_goods = grain
