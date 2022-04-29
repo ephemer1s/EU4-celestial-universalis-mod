@@ -450,7 +450,7 @@ cu_jiangningzhizao = {
             factor = 1000
         }
         province_modifiers = {
-            state_governing_cost = -0.1
+            local_governing_cost = -0.2
         }
         area_modifier = {
             trade_goods_size_modifier = 0.1
@@ -468,9 +468,9 @@ cu_jiangningzhizao = {
             factor = 2500
         }
         province_modifiers = {
-            state_governing_cost = -0.2
         }
         area_modifier = {
+            local_governing_cost = -0.2
             trade_goods_size_modifier = 0.15
         }
         country_modifiers = {
@@ -487,9 +487,9 @@ cu_jiangningzhizao = {
             factor = 5000
         }
         province_modifiers = {
-            state_governing_cost = -0.2
         }
         area_modifier = {
+            local_governing_cost = -0.3
             trade_goods_size_modifier = 0.2
         }
         country_modifiers = {
