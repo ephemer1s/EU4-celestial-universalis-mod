@@ -3,3 +3,15 @@
 *.png
 *.psd
 \texture_templates
+common\event_modifiers\00_event_modifiers.txt
+common\event_modifiers\01_mission_modifiers.txt
+common\ideas\
+common/event_modifiers/00_event_modifiers.txt
+common/event_modifiers/01_mission_modifiers.txt
+common/ideas/00_basic_ideas.txt
+common/ideas/00_country_ideas.txt
+common/ideas/zz_group_ideas.txt
+common/ideas/zzz_default_idea.txt
+common/ideas/zzzz_compatibility.txt
+common/province_triggered_modifiers/00_modifiers.txt
+common/triggered_modifiers/00_triggered_modifiers.txt
