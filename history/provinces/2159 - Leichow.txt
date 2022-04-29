@@ -3,7 +3,7 @@
 owner = MNG
 controller = MNG
 add_core = MNG
-culture = chimin
+culture = cantonese
 religion = confucianism
 capital = "Leichow"
 trade_goods = sugar

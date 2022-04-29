@@ -3,19 +3,20 @@
 owner = MNG
 controller = MNG
 add_core = MNG
-culture = xibei
+culture = sichuanese
 religion = confucianism
 capital = "Hanzhong"
 trade_goods = iron
 hre = no
-base_tax = 4 
-base_production = 4
+base_tax = 5 
+base_production = 5
 base_manpower = 3
 is_city = yes
 add_core = CSH
 add_core = QIN
 
-
+extra_cost = 8
+center_of_trade = 1
 
 discovered_by = chinese
 discovered_by = nomad_group
