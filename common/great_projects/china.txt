@@ -1,0 +1,176 @@
+tiantan = {
+    # Province the project starts in
+    start = 1816
+
+    # Date built in real life (If you start the game at a date later than this, then the project will show up)
+    date = 1420.1.1
+
+    # How much it costs to build
+    build_cost = 100
+
+    # If the project can be moved
+    can_be_moved = no
+
+    # Starting tier of the project
+    starting_tier = 1
+
+    # Project type
+    type = monument
+
+    # Conditions to build the project
+    build_trigger = {
+        # <conditions>
+    }
+
+    # What happens when the project is built
+    on_built = {
+        # <do stuff> # For example; add_prestige = 25
+    }
+
+    # What happens when the project is destroyed
+    on_destroyed = {
+        # <do stuff> # For example; add_prestige = -25
+    }
+
+    # Conditions to use project
+    can_use_modifiers_trigger = {
+        # <conditions>
+    }
+
+    # Conditions to upgrade project
+    can_upgrade_trigger = {
+        # <conditions>
+    }
+
+    # Conditions for if the project will be destroyed when conquered
+    keep_trigger = {
+        # <conditions>
+    }
+
+    # Tiers
+    tier_0 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 240
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 2000
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+            # <modifiers>
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+            # <modifiers>
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+            # <modifiers>
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+            # <do stuff> #For example; add_prestige = 25
+        }
+    }
+    tier_1 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 240
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 2000
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+            # <modifiers>
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+            # <modifiers>
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+            # <modifiers>
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+            # <do stuff> #For example; add_prestige = 25
+        }
+    }
+    tier_2 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 240
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 2000
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+            # <modifiers>
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+            # <modifiers>
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+            # <modifiers>
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+            # <do stuff> #For example; add_prestige = 25
+        }
+    }
+    tier_3 = {
+        # Time it takes to upgrade the project
+        upgrade_time = {
+            months = 240
+        }
+
+        # Cost to upgrade the project
+        cost_to_upgrade = {
+            factor = 2000
+        }
+
+        # What modifiers are given to the province the project is located in
+        province_modifiers = {
+            # <modifiers>
+        }
+
+        # What modifiers are given to the area of the province the project is located in
+        area_modifier = {
+            # <modifiers>
+        }
+
+        # What modifiers are given to the nation that owns the monument
+        country_modifiers = {
+            # <modifiers>
+        }
+
+        # What happens when the upgrade is complete
+        on_upgraded = {
+            # <do stuff> #For example; add_prestige = 25
+        }
+    }
+
+}
