@@ -1,0 +1,42 @@
+################################################
+#  Triggered Modifiers for the Great Wall
+################################################
+
+
+cu_nine_garrisons_modifier = {
+    potential = {
+		normal_or_historical_nations = yes
+        OR = {
+            has_building = fort_15th
+            has_building = fort_16th
+            has_building = fort_17th
+            has_building = fort_18th
+        }
+	}
+	trigger = {
+        owner = {
+            AND = {
+                has_reform = celestial_empire
+                OR = {
+                    capital = 1816
+                    capital = 1821
+                    capital = 1836
+                    capital = 688
+                    capital = 700
+                }
+                #has_great_project = {
+                #    type = the_great_wall_of_china
+                #    tier = 1
+                #}
+            }
+        }
+	}
+	
+    garrison_growth = 0.1
+    local_defensiveness = 0.1
+    local_hostile_movement_speed = -0.25
+}
+
+################################################
+
+################################################
