@@ -50,11 +50,9 @@ celestial_empire = {
 		governing_capacity = 1800
 		yearly_corruption = 1
 		land_forcelimit_modifier = -0.5
-		land_maintenance_modifier = 1
 		garrison_size = 0.5
 		min_autonomy = 25
 		trade_efficiency = -0.25
-		tolerance_heathen = -3
 	}
 	
 	ai = {
