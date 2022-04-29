@@ -145,7 +145,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "tributary_label"
-			position = { x = 294 y = 519 }
+			position = { x = 294 y = 569 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 0}
@@ -157,7 +157,7 @@ guiTypes = {
 
 		listboxType =  {
 			name ="tributary_shield_box"
-			position = { x = 136 y = 550 }
+			position = { x = 136 y = 600 }
 			backGround=""
 			size = { x = 470 y = 200 }
 			Orientation = "UPPER_LEFT"
@@ -183,7 +183,7 @@ guiTypes = {
 			name ="decree_listbox_left"
 			position = { x = 126 y = 360 }
 			backGround=""
-			size = { x = 512 y = 150 }
+			size = { x = 512 y = 200 }
 			Orientation = "UPPER_LEFT"
 			horizontal = 0
 			spacing = 0
@@ -195,7 +195,7 @@ guiTypes = {
 			name ="decree_listbox_right"
 			position = { x = 376 y = 360 }
 			backGround=""
-			size = { x = 280 y = 150 }
+			size = { x = 280 y = 200 }
 			Orientation = "UPPER_LEFT"
 			horizontal = 0
 			spacing = 0
@@ -217,7 +217,7 @@ guiTypes = {
 			
 		guiButtonType = {
 			name = "close_button"
-			position = { x=308 y =638}
+			position = { x=308 y =688}
 			quadTextureSprite ="button_type_1"
 			tooltip = ""
 			tooltipText =""
