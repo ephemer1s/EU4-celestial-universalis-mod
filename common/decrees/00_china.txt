@@ -167,7 +167,7 @@ eradicate_corruption_decree = {
 	cost = 20
 	duration = 3650
 	modifier = {
-		yearly_corruption = -0.25
+		yearly_corruption = -0.1
 	}
 	ai_will_do = {
 		factor = 0

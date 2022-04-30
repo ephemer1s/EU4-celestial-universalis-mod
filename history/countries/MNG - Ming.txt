@@ -8,6 +8,11 @@ primary_culture = jianghuai
 capital = 1821	# Nanjing
 
 
+add_country_modifier = {
+	name = cu_ming_balance_modifier
+	duration = -1
+}
+
 
 if = {
 	limit = {
