@@ -32,7 +32,6 @@ cu_nine_garrisons_modifier = {
         }
 	}
 	
-    garrison_growth = 0.1
     local_defensiveness = 0.1
     local_hostile_movement_speed = -0.25
 }

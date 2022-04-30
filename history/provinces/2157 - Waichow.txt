@@ -3,8 +3,8 @@
 owner = MNG
 controller = MNG
 add_core = MNG
-culture = hakka
-religion = cantonese
+culture = cantonese
+religion = confucianism
 capital = "Waichow"
 trade_goods = incense
 hre = no
