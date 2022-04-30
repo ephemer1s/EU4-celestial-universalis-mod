@@ -1,6 +1,5 @@
 # history/
 *.py
-*.png
 *.psd
 \texture_templates
 common\event_modifiers\00_event_modifiers.txt
