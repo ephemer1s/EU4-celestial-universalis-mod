@@ -5,7 +5,7 @@ spriteTypes = { # If editing an existing .gfx file then this line will likely al
     }
     spriteType = {
         name = "GFX_great_project_cu_dujiangyan"	
-        texturefile = "gfx//interface//great_projects//great_project_cu_dujiangyan_rev.dds"
+        texturefile = "gfx//interface//great_projects//great_project_cu_dujiangyan.dds"
     }
     spriteType = {
         name = "GFX_great_project_cu_jiangningzhizao"	
