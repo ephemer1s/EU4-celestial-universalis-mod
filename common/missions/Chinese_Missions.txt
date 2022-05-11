@@ -1,6 +1,6 @@
 chinese_missions_1 = {
 	slot = 1
-	generic = no
+	generic = yes
 	ai = yes
 	potential = {
 		culture_group = east_asian
@@ -128,7 +128,7 @@ chinese_missions_1 = {
 
 chinese_missions_2 = {
 	slot = 2
-	generic = no
+	generic = yes
 	ai = yes
 	potential = {
 		culture_group = east_asian
