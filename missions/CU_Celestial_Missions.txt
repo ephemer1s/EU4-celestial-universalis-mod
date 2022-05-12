@@ -1,0 +1,88 @@
+celes_missions_ocean_trade = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = MNG
+	}
+	has_country_shield = yes
+
+	revoke_seaban = {
+		icon = mission_junk_boat
+		position = 1
+		trigger = {
+			has_reform = celestial_empire
+			empire_of_china_reform_level = 2
+			navy_size = 80
+		}
+		effect = {
+			add_country_modifier = {
+				name = "celes_seaban_revoked"
+				duration = 9125
+			}
+		}
+	}
+
+	develop_east_sea = {
+		icon = mission_dominate_home_trade_node
+		position = 2
+		required_missions = { revoke_seaban }
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 8
+				OR = {
+					region = north_china_region
+					region = south_china_region
+					region = xinan_region
+				}
+				has_port = yes
+				province_has_center_of_trade_of_level = 2
+			}
+		}
+		effect = {
+			country_event = { id = 862 }
+			# country_event = { id = cu_mission_events.1 }
+		}
+	}
+}
+
+celes_mission_colonization = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = MNG
+	}
+	has_country_shield = yes
+
+	colonize_taiwan = {
+		icon = mission_invade_island
+		position = 3
+		required_missions = { develop_east_sea }
+		provinces_to_highlight = {
+			area = taiwan_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			2154 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			2155 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			738 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "colonial_enthusiasm"
+				duration = 7300
+			}
+		}
+	}
+
+	
+}

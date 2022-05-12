@@ -13,8 +13,9 @@ cu_ming_balance_modifier = { # shishen youdai
     tolerance_heathen = -3
     # diplomatic_upkeep = -2
     # unjustified_demands = 0.25
-    land_maintenance_modifier = 0.25
+    land_maintenance_modifier = 0.5
     num_accepted_cultures = -3
+    land_forcelimit_modifier = -0.5
 }
 
 cu_ming_aggressive_minorties = {   # focusing on rebellion
