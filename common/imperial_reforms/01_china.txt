@@ -2,14 +2,15 @@ establish_gaituguiliu_decision = {
 	empire = celestial_empire
 	emperor = {
 		meritocracy = 0.5
+		num_accepted_cultures = 1
 	}
 }
 
 seaban_decision = {
 	empire = celestial_empire
 	emperor = {
-		diplomats = 1
-		trade_efficiency = 0.05
+		trade_efficiency = 0.10
+		merchants = 1
 	}
 	required_reform = establish_gaituguiliu_decision
 }
@@ -26,6 +27,7 @@ military_governors_decision = {
 	empire = celestial_empire
 	emperor = {
 		core_creation = -0.1
+		free_leader_pool = 1
 	}
 	required_reform = reform_land_tax_decision
 }
@@ -43,6 +45,7 @@ vassalize_tributaries_decision = {
 	emperor = {
 		imperial_mandate = 0.05
 		liberty_desire_from_subject_development = -0.33
+		diplomats = 1
 	}
 	on_effect = {
 		custom_tooltip = vassalize_tributaries_decision_tt

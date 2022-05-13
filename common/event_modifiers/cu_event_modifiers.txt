@@ -18,6 +18,15 @@ cu_ming_balance_modifier = { # shishen youdai
     land_forcelimit_modifier = -0.5
 }
 
+# Removed by enacting reforms and finishing mission
+cu_ming_seaban = {
+    global_tariffs = -1
+    global_foreign_trade_power = -1
+    naval_forcelimit_modifier = -0.75
+    trade_efficiency = -0.25
+}
+
+
 cu_ming_aggressive_minorties = {   # focusing on rebellion
     tolerance_heretic = -3
     tolerance_heathen = -3
@@ -56,7 +65,6 @@ cu_ming_massive_reduced_corruptive_administration = {
     advisor_cost = 0.05
 }
 
-
 cu_ming_corruptive_warlords = {
     land_maintenance_modifier = 0.25
     naval_attrition = 2
@@ -90,9 +98,3 @@ cu_ming_oppressed_farmers = {
     manpower_recovery_speed = -0.33
 }
 
-cu_ming_seaban_act = {
-    global_tariffs = -1
-    global_foreign_trade_power = -1
-    naval_forcelimit_modifier = -0.75
-    trade_efficiency = -0.25
-}
