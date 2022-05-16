@@ -44,9 +44,9 @@ estate_church_shizu_bureaucracy = {
         global_autonomy = 0.5
 	}
     modifier_by_land_ownership = {
-        min_autonomy = 100
+        min_autonomy = 80
         yearly_corruption = 0.5
-        global_tax_modifier = -0.8
+        global_tax_modifier = -1
         state_maintenance_modifier = 1
 	}
 	benefits = {
