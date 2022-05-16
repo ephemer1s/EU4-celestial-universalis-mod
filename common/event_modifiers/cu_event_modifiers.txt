@@ -1,29 +1,20 @@
 cu_ming_balance_modifier = { # shishen youdai
     # min_autonomy = 25
-    global_autonomy = 0.4
-    yearly_corruption = 0.5
-    state_maintenance_modifier = 0.25
-    advisor_cost = 0.5
-    global_tax_modifier = -0.25
-    #trade_efficiency = -0.25
-    #production_efficiency = -0.25
-    global_trade_goods_size_modifier = -0.25
-    build_cost = +0.5
-    tolerance_heretic = -3
-    tolerance_heathen = -3
+    # global_autonomy = 0.4
+    # yearly_corruption = 0.5
+    # state_maintenance_modifier = 0.25
+    # advisor_cost = 0.5
+    # global_tax_modifier = -0.25
+    # trade_efficiency = -0.25
+    # production_efficiency = -0.25
+    # global_trade_goods_size_modifier = -0.25
+    # build_cost = +0.5
+    # tolerance_heretic = -3
+    # tolerance_heathen = -3
     # diplomatic_upkeep = -2
     # unjustified_demands = 0.25
-    land_maintenance_modifier = 0.5
-    num_accepted_cultures = -3
-    land_forcelimit_modifier = -0.5
-}
-
-# Removed by enacting reforms and finishing mission
-cu_ming_seaban = {
-    global_tariffs = -1
-    global_foreign_trade_power = -1
-    naval_forcelimit_modifier = -0.75
-    trade_efficiency = -0.25
+    # land_maintenance_modifier = 0.25
+    # num_accepted_cultures = -3
 }
 
 
@@ -98,3 +89,11 @@ cu_ming_oppressed_farmers = {
     manpower_recovery_speed = -0.33
 }
 
+cu_ming_seaban_act = {
+    global_tariffs = -1
+    global_foreign_trade_power = -1
+    naval_forcelimit_modifier = -0.75
+    trade_efficiency = -0.25
+    trade_range_modifier = -0.8
+    range = -0.8
+}

@@ -48,6 +48,7 @@ celestial_empire = {
 	modifiers = {
 		prestige = 0.5
 		governing_capacity = 1800
+		yearly_corruption = 0.2
 	}
 	
 	ai = {
@@ -62,7 +63,11 @@ celestial_empire = {
 	conditional = {
 		allow = { has_dlc = "Mandate of Heaven" }
 		has_meritocracy = yes
-		factions = {}
+		factions = {
+			temples
+			enuchs
+			bureaucrats
+		}
 	}
 }
 
