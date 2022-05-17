@@ -137,22 +137,6 @@ celes_mission_inward = {
 			empire_of_china_reform_passed = establish_gaituguiliu_decision
 		}
 		effect = {
-			662 = {
-				if = {
-					limit = {
-						culture = bai
-					}
-					change_culture = bai_new
-					owner = {
-						add_harmony = -5
-					}
-				}
-				else = {
-					add_base_tax = 1
-					add_base_production = 1
-					add_base_manpower = 1
-				}
-			}
 			673 = {
 				if = {
 					limit = {
@@ -172,9 +156,25 @@ celes_mission_inward = {
 			674 = {
 				if = {
 					limit = {
-						culture = miao
+						culture = yi
 					}
-					change_culture = miao_new
+					change_culture = yi_new
+					owner = {
+						add_harmony = -5
+					}
+				}
+				else = {
+					add_base_tax = 1
+					add_base_production = 1
+					add_base_manpower = 1
+				}
+			}
+			662 = {
+				if = {
+					limit = {
+						culture = bai
+					}
+					change_culture = bai_new
 					owner = {
 						add_harmony = -5
 					}
