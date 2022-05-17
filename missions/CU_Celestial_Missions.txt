@@ -9,7 +9,7 @@ celes_missions_ocean_trade = {
 
 	cu_reform_seaban = {
 		icon = mission_junk_boat
-		position = 1
+		position = 4
 		trigger = {
 			has_reform = celestial_empire
 			empire_of_china_reform_passed = seaban_decision
@@ -26,7 +26,7 @@ celes_missions_ocean_trade = {
 
 	cu_develop_east_sea = {
 		icon = mission_dominate_home_trade_node
-		position = 2
+		position = 5
 		required_missions = { cu_reform_seaban }
 		trigger = {
 			num_of_owned_provinces_with = {
@@ -48,7 +48,7 @@ celes_missions_ocean_trade = {
 
 	cu_colonize_taiwan = {
 		icon = mission_invade_island
-		position = 3
+		position = 6
 		required_missions = { cu_develop_east_sea }
 		provinces_to_highlight = {
 			area = taiwan_area
@@ -75,7 +75,8 @@ celes_missions_ocean_trade = {
 		}
 	}
 }
-celes_mission_starter = {
+
+celes_mission_levy = {
 	slot = 2
 	generic = no
 	ai = yes
@@ -104,8 +105,9 @@ celes_mission_starter = {
 		}
 	}
 }
+
 celes_mission_inward = {
-	slot = 3
+	slot = 4
 	generic = no
 	ai = yes
 	potential = {
@@ -144,7 +146,7 @@ celes_mission_inward = {
 					}
 					change_culture = miao_new
 					owner = {
-						add_harmony = -5
+						add_harmony = -3
 					}
 				}
 				else = {
@@ -160,7 +162,7 @@ celes_mission_inward = {
 					}
 					change_culture = yi_new
 					owner = {
-						add_harmony = -5
+						add_harmony = -3
 					}
 				}
 				else = {
@@ -176,7 +178,7 @@ celes_mission_inward = {
 					}
 					change_culture = bai_new
 					owner = {
-						add_harmony = -5
+						add_harmony = -3
 					}
 				}
 				else = {
@@ -185,6 +187,102 @@ celes_mission_inward = {
 					add_base_manpower = 1
 				}
 			}
+		}
+	}
+}
+
+celes_missions_expand = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = MNG
+	}
+	has_country_shield = yes
+
+	cu_revert_tumu_crisis = {
+		icon = mission_indian_soldier_elephant
+		position = 1
+		trigger = {
+			if = {
+				limit = { exists = OIR }
+				has_ruler = "Qizhen"
+				is_monarch_leader = yes
+				war_with = OIR
+			}
+			else_if = {
+				limit = { 
+					NOT = { exists = OIR }
+				}
+				OR = {
+					723 = {
+						controlled_by = ROOT
+						is_core = ROOT
+					}
+					4678 = {
+						controll_by = ROOT
+						is_core = ROOT
+					}
+				}
+			}
+		}
+		effect = {
+			ordos_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			inner_mongolia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	cu_strategic_ctrl = {
+		icon = mission_indian_soldier_elephant
+		position = 2
+		required_missions = { cu_revert_tumu_crisis }
+		trigger = {
+			OR = {
+				OIR = {is_subject_of = ROOT}
+				OIR = {exists = no}
+			}
+			OR = {
+				KHA = {is_subject_of = ROOT}
+				KHA = {exists = no}
+			}
+		}
+		effect = {
+			add_mandate = 10
+			add_army_tradition = 20
+			west_gansu_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	cu_control_west_gansu = {
+		icon = mission_indian_soldier_elephant
+		position = 3
+		trigger = {
+			HMI = { is_subject_of = ROOT }
+			west_gansu_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_mandate = 5
 		}
 	}
 }
