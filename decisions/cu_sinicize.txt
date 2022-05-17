@@ -87,6 +87,7 @@ country_decisions = {
         }
         effect = {
             add_harmony = -30
+            add_stability = -1
             every_province = {
                 limit = {
                     culture = yi
@@ -122,6 +123,7 @@ country_decisions = {
         allow = {
 			empire_of_china_reform_passed = establish_gaituguiliu_decision
             has_harmonized_with = buddhism
+            has_harmonized_with = animism
             NOT = {
                 any_province = {
                     culture = bai
@@ -136,6 +138,7 @@ country_decisions = {
         }
         effect = {
             add_harmony = -30
+            add_stability = -1
             every_province = {
                 limit = {
                     culture = bai
