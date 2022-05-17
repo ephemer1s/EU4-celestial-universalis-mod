@@ -1,0 +1,8 @@
+cu_army_disarmament = {
+    manpower_recovery_speed = 0.25
+}
+
+cu_stable_and_prosper = {
+    stability_cost_modifier = -0.1
+    global_prosperity_growth = +1
+}
