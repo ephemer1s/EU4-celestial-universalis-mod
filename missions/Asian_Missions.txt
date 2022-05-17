@@ -35,6 +35,12 @@ asian_missions = {
 					is_strongest_trade_power = ROOT
 				}
 			}
+			if = {
+				limit = {
+					has_reform = celestial_empire
+				}
+				empire_of_china_reform_passed = seaban_decision
+			}
 		}
 		effect = {
 			add_country_modifier = {
@@ -66,6 +72,12 @@ asian_missions = {
 				trade_goods = silk
 			}
 			silk = 8
+			if = {
+				limit = {
+					has_reform = celestial_empire
+				}
+				empire_of_china_reform_passed = seaban_decision
+			}
 		}
 		effect = {
 			add_country_modifier = {
