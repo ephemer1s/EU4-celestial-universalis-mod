@@ -7,7 +7,7 @@ celes_missions_ocean_trade = {
 	}
 	has_country_shield = yes
 
-	reform_seaban = {
+	cu_reform_seaban = {
 		icon = mission_junk_boat
 		position = 1
 		trigger = {
@@ -24,10 +24,10 @@ celes_missions_ocean_trade = {
 		}
 	}
 
-	develop_east_sea = {
+	cu_develop_east_sea = {
 		icon = mission_dominate_home_trade_node
 		position = 2
-		required_missions = { reform_seaban }
+		required_missions = { cu_reform_seaban }
 		trigger = {
 			num_of_owned_provinces_with = {
 				value = 8
@@ -46,24 +46,10 @@ celes_missions_ocean_trade = {
 		}
 	}
 
-	reestablish_treasure_fleet = {
-		icon = mission_junk_boat
-	}
-}
-
-celes_mission_colonization = {
-	slot = 2
-	generic = no
-	ai = yes
-	potential = {
-		tag = MNG
-	}
-	has_country_shield = yes
-
-	colonize_taiwan = {
+	cu_colonize_taiwan = {
 		icon = mission_invade_island
 		position = 3
-		required_missions = { develop_east_sea }
+		required_missions = { cu_develop_east_sea }
 		provinces_to_highlight = {
 			area = taiwan_area
 			NOT = {
@@ -88,8 +74,8 @@ celes_mission_colonization = {
 			}
 		}
 	}
-
-celes_mission_tributary = {
+}
+celes_mission_starter = {
 	slot = 2
 	generic = no
 	ai = yes
@@ -98,45 +84,60 @@ celes_mission_tributary = {
 	}
 	has_country_shield = yes
 
-	establish_tributary_malacca = {
-		icon = mission_dominate_home_trade_node
+	cu_rearrange_troops = {
+		icon = mission_indian_soldier_elephant
 		position = 1
-		required_missions = {  }
 		trigger = {
-			if = {
-				limit = {
-					exists = MLC
-				}
-				MLC = {
-					is_at_war = no
-				}
-				MLC = {
-					has_opinion = {
-						who = ROOT
-						value = 100
-					}
-				}
+			NOT = {
+				army_size_percentage = 1
 			}
-			else = {  }
+			NOT = {
+				navy_size_percentage = 1
+			}
 		}
 		effect = {
-			if = {
-				limit = {
-					exists = MLC
-				}
-				create_subject = {
-					subject_type = tributary_state
-					subject = MLC
-				}
-			else = {
-				malacca_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
+			add_years_of_income = 0.5
+			add_country_modifier = {
+				name = "cu_army_disarmament"
+				duration = 3650
 			}
+		}
+	}
+}
+celes_mission_inward = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = MNG
+	}
+	has_country_shield = yes
+	cu_make_it_stable = {
+		icon = mission_indian_soldier_elephant
+		position = 1
+		trigger = {
+			stability = 1
+		}
+		effect = {
+			add_country_modifier = {
+				name = "cu_stable_and_prosper"
+				duration = 3650
+			}
+		}
+	}
+	cu_gaituguiliu_m = {
+		icon = mission_indian_soldier_elephant
+		position = 2
+		required_missions = {
+			cu_make_it_stable
+			cu_rearrange_troops
+		}
+		trigger = {
+			has_reform = celestial_empire
+			empire_of_china_reform_passed = establish_gaituguiliu_decision
+		}
+		effect = {
+			add_years_of_income = 0.5
 		}
 	}
 }
