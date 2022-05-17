@@ -36,6 +36,7 @@ centralizing_top_government_decision = {
 	empire = celestial_empire
 	emperor = {
 		monarch_admin_power = 1
+		yearly_corruption = -0.2
 	}
 	required_reform = military_governors_decision
 }
