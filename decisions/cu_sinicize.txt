@@ -1,0 +1,150 @@
+country_decisions = {
+    sinicize_miao_culture = {
+        potential = {
+            culture_group = east_asian
+            has_reform = celestial_empire
+            religion = confucianism
+            any_province = {
+                culture = miao
+                NOT = { continent = north_america }
+                NOT = { continent = south_america }
+                NOT = { continent = new_world }
+                NOT = { continent = oceania }
+            }
+        }
+        provinces_to_highlight = {
+            culture = miao
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+            NOT = { continent = north_america }
+            NOT = { continent = south_america }
+            NOT = { continent = new_world }
+            NOT = { continent = oceania }
+        }
+        allow = {
+			empire_of_china_reform_passed = establish_gaituguiliu_decision
+            has_harmonized_with = animism   
+            NOT = {
+                any_province = {
+                    culture = miao
+                    NOT = { country_or_non_sovereign_subject_holds = ROOT }
+                    NOT = { continent = north_america }
+                    NOT = { continent = south_america }
+                    NOT = { continent = new_world }
+                    NOT = { continent = oceania }
+                }
+            }
+            harmony = 60
+        }
+        effect = {
+            add_harmony = -30
+            add_stability = -1
+            every_province = {
+                limit = {
+                    culture = miao
+                }
+                change_culture = miao_new
+            }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    sinicize_yi_culture = {
+        potential = {
+            culture_group = east_asian
+            has_reform = celestial_empire
+            religion = confucianism
+            any_province = {
+                culture = yi
+                NOT = { continent = north_america }
+                NOT = { continent = south_america }
+                NOT = { continent = new_world }
+                NOT = { continent = oceania }
+            }
+        }
+        provinces_to_highlight = {
+            culture = yi
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+            NOT = { continent = north_america }
+            NOT = { continent = south_america }
+            NOT = { continent = new_world }
+            NOT = { continent = oceania }
+        }
+        allow = {
+			empire_of_china_reform_passed = establish_gaituguiliu_decision
+            has_harmonized_with = animism   
+            NOT = {
+                any_province = {
+                    culture = yi
+                    NOT = { country_or_non_sovereign_subject_holds = ROOT }
+                    NOT = { continent = north_america }
+                    NOT = { continent = south_america }
+                    NOT = { continent = new_world }
+                    NOT = { continent = oceania }
+                }
+            }
+            harmony = 60
+        }
+        effect = {
+            add_harmony = -30
+            every_province = {
+                limit = {
+                    culture = yi
+                }
+                change_culture = yi_new
+            }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    sinicize_bai_culture = {
+        potential = {
+            culture_group = east_asian
+            has_reform = celestial_empire
+            religion = confucianism
+            any_province = {
+                culture = bai
+                NOT = { continent = north_america }
+                NOT = { continent = south_america }
+                NOT = { continent = new_world }
+                NOT = { continent = oceania }
+            }
+        }
+        provinces_to_highlight = {
+            culture = bai
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+            NOT = { continent = north_america }
+            NOT = { continent = south_america }
+            NOT = { continent = new_world }
+            NOT = { continent = oceania }
+        }
+        allow = {
+			empire_of_china_reform_passed = establish_gaituguiliu_decision
+            has_harmonized_with = buddhism
+            NOT = {
+                any_province = {
+                    culture = bai
+                    NOT = { country_or_non_sovereign_subject_holds = ROOT }
+                    NOT = { continent = north_america }
+                    NOT = { continent = south_america }
+                    NOT = { continent = new_world }
+                    NOT = { continent = oceania }
+                }
+            }
+            harmony = 60
+        }
+        effect = {
+            add_harmony = -30
+            every_province = {
+                limit = {
+                    culture = bai
+                }
+                change_culture = bai_new
+            }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+}
