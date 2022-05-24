@@ -259,7 +259,7 @@ celes_missions_expand = {
 			}
 		}
 		effect = {
-			add_mandate = 10
+			add_mandate = 5
 			add_army_tradition = 20
 			west_gansu_area = {
 				limit = {
@@ -274,6 +274,7 @@ celes_missions_expand = {
 	cu_control_west_gansu = {
 		icon = mission_indian_soldier_elephant
 		position = 3
+		required_missions = { cu_strategic_ctrl }
 		trigger = {
 			HMI = { is_subject_of = ROOT }
 			west_gansu_area = {
@@ -283,6 +284,69 @@ celes_missions_expand = {
 		}
 		effect = {
 			add_mandate = 5
+
 		}
 	}
+
+	cu_break_mongols = {
+		icon = mission_indian_soldier_elephant
+		position = 8
+		required_missions = { cu_strategic_ctrl }
+		trigger = {
+			north_zungaria = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			zungaria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			turpan_kumul_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			central_mongolia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			inner_mongolia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			central_mongolia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			outer_mongolia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			xilin_gol_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			chahar_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			ordos_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			uliastai_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		provinces_to_highlight = {
+		}
+		effect = {
+			add_mandate = 10
+			add_country_modifier = {
+				name = "cu_steppe_conquered"
+				duration = -1
+			}
+		}
+	}
+
 }
