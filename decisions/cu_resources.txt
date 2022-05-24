@@ -1,0 +1,103 @@
+country_decisions = {
+    establish_glass_factory_beijing = {
+        potential = {
+            has_reform = celestial_empire
+            1816 = {
+                owned_by = ROOT
+            }
+        }
+        allow = {
+            NOT = {
+                current_age = age_of_discovery
+            }
+            treasury = 1000
+            meritocracy = 90
+        }
+        provinces_to_highlight = {
+            province_id = 1816
+        }
+        effect = {
+            add_treasury = -1000
+            meritocracy = -10
+            1816 = {
+                change_trade_goods = glass
+                add_province_modifier = {
+                    name = "glass_factory_of_beijing"
+                    duration = -1
+                }
+            }
+        }
+    }
+    establish_weaving_bureau_jiangning = {
+        potential = {
+            has_reform = celestial_empire
+            1821 = {
+                owned_by = ROOT
+            }
+        }
+        allow = {
+            NOT = {
+                current_age = age_of_discovery
+            }
+            treasury = 2000
+            meritocracy = 90
+        }
+        provinces_to_highlight = {
+            area = south_jiangsu_area
+        }
+        effect = {
+            add_treasury = -2000
+            meritocracy = -10
+            every_province = {
+                limit = {
+                    area = south_jiangsu_area
+                    trade_goods = silk
+                }
+                add_province_modifier = {
+                    name = "weaving_bureau_of_jiangning"
+                    duration = -1
+                }
+            }
+        }
+    }
+    explore_resources_in_liangshan = {
+        potential = {
+            OR = {
+                2748 = {
+                    country_or_non_sovereign_subject_holds = ROOT
+                }
+                8115 = {
+                    country_or_non_sovereign_subject_holds = ROOT
+                }
+                8116 = {
+                    country_or_non_sovereign_subject_holds = ROOT
+                }
+                8117 = {
+                    country_or_non_sovereign_subject_holds = ROOT
+                }
+                8118 = {
+                    country_or_non_sovereign_subject_holds = ROOT
+                }
+                8161 = {
+                    country_or_non_sovereign_subject_holds = ROOT
+                }
+                4213 = {
+                    country_or_non_sovereign_subject_holds = ROOT
+                }
+            }
+            has_institution = feudalism
+            NOT = {
+                has_global_flag = large_mine_discovered_liangshan
+            }
+        }
+        allow = {
+            mil_tech = 10
+            adm = 4
+        }
+        effect = {
+            add_treasury = -500
+            add_manpower = -10
+            set_country_flag = exploring_resources_liangshan
+        }
+    }
+}

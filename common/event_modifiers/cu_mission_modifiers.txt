@@ -1,0 +1,35 @@
+cu_army_disarmament = {
+    manpower_recovery_speed = 0.25
+}
+
+cu_stable_and_prosper = {
+    stability_cost_modifier = -0.1
+    global_prosperity_growth = +1
+}
+
+cu_steppe_conquered = {
+    cavalry_cost = -0.2
+    cav_to_inf_ratio = 1
+}
+
+cu_harmonized_miaoyi = {
+    yearly_harmony = 0.25
+    tolerance_own = 2
+}
+
+cu_suppressed_miaoyi = {
+    culture_conversion_cost = -0.3
+    harsh_treatment_cost = -0.3
+}
+
+cu_moutai = {
+    trade_goods_size = 3
+}
+
+cu_wuliangye = {
+    trade_goods_size = 1
+}
+
+cu_luzhoulaojiao = {
+    trade_goods_size = 1
+}

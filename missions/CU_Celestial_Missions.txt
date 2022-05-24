@@ -1,0 +1,352 @@
+celes_missions_ocean_trade = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = MNG
+	}
+	has_country_shield = yes
+
+	cu_reform_seaban = {
+		icon = mission_junk_boat
+		position = 4
+		trigger = {
+			has_reform = celestial_empire
+			empire_of_china_reform_passed = seaban_decision
+			# navy_size = 80
+		}
+		effect = {
+			add_country_modifier = {
+				name = "celes_seaban_revoked"
+				duration = 9125
+			}
+			remove_country_modifier = cu_ming_seaban
+		}
+	}
+
+	cu_develop_east_sea = {
+		icon = mission_dominate_home_trade_node
+		position = 5
+		required_missions = { cu_reform_seaban }
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 8
+				OR = {
+					region = north_china_region
+					region = south_china_region
+					region = xinan_region
+				}
+				has_port = yes
+				province_has_center_of_trade_of_level = 2
+			}
+		}
+		effect = {
+			country_event = { id = 862 }
+			# country_event = { id = cu_mission_events.1 }
+		}
+	}
+
+	cu_colonize_taiwan = {
+		icon = mission_invade_island
+		position = 6
+		required_missions = { cu_develop_east_sea }
+		provinces_to_highlight = {
+			area = taiwan_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			2154 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			2155 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			738 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "colonial_enthusiasm"
+				duration = 7300
+			}
+		}
+	}
+}
+
+celes_mission_levy = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = MNG
+	}
+	has_country_shield = yes
+
+	cu_rearrange_troops = {
+		icon = mission_indian_soldier_elephant
+		position = 1
+		trigger = {
+			NOT = {
+				army_size_percentage = 1
+			}
+			NOT = {
+				navy_size_percentage = 1
+			}
+		}
+		effect = {
+			add_years_of_income = 0.5
+			add_country_modifier = {
+				name = "cu_army_disarmament"
+				duration = 3650
+			}
+		}
+	}
+}
+
+celes_mission_inward = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = MNG
+	}
+	has_country_shield = yes
+	cu_make_it_stable = {
+		icon = mission_indian_soldier_elephant
+		position = 1
+		trigger = {
+			stability = 1
+		}
+		effect = {
+			add_country_modifier = {
+				name = "cu_stable_and_prosper"
+				duration = 3650
+			}
+		}
+	}
+	cu_gaituguiliu_m = {
+		icon = mission_indian_soldier_elephant
+		position = 2
+		required_missions = {
+			cu_make_it_stable
+			cu_rearrange_troops
+		}
+		trigger = {
+			has_reform = celestial_empire
+			empire_of_china_reform_passed = establish_gaituguiliu_decision
+		}
+		effect = {
+			673 = {
+				if = {
+					limit = {
+						culture = miao
+					}
+					change_culture = miao_new
+					owner = {
+						add_harmony = -3
+					}
+				}
+				else = {
+					add_base_tax = 1
+					add_base_production = 1
+					add_base_manpower = 1
+				}
+			}
+			674 = {
+				if = {
+					limit = {
+						culture = yi
+					}
+					change_culture = yi_new
+					owner = {
+						add_harmony = -3
+					}
+				}
+				else = {
+					add_base_tax = 1
+					add_base_production = 1
+					add_base_manpower = 1
+				}
+			}
+			662 = {
+				if = {
+					limit = {
+						culture = bai
+					}
+					change_culture = bai_new
+					owner = {
+						add_harmony = -3
+					}
+				}
+				else = {
+					add_base_tax = 1
+					add_base_production = 1
+					add_base_manpower = 1
+				}
+			}
+		}
+	}
+}
+
+celes_missions_expand = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = MNG
+	}
+	has_country_shield = yes
+
+	cu_revert_tumu_crisis = {
+		icon = mission_indian_soldier_elephant
+		position = 1
+		trigger = {
+			if = {
+				limit = { exists = OIR }
+				has_ruler = "Qizhen"
+				is_monarch_leader = yes
+				war_with = OIR
+			}
+			else_if = {
+				limit = { 
+					NOT = { exists = OIR }
+				}
+				OR = {
+					723 = {
+						controlled_by = ROOT
+						is_core = ROOT
+					}
+					4678 = {
+						controll_by = ROOT
+						is_core = ROOT
+					}
+				}
+			}
+		}
+		effect = {
+			ordos_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			inner_mongolia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	cu_strategic_ctrl = {
+		icon = mission_indian_soldier_elephant
+		position = 2
+		required_missions = { cu_revert_tumu_crisis }
+		trigger = {
+			OR = {
+				OIR = {is_subject_of = ROOT}
+				OIR = {exists = no}
+			}
+			OR = {
+				KHA = {is_subject_of = ROOT}
+				KHA = {exists = no}
+			}
+		}
+		effect = {
+			add_mandate = 5
+			add_army_tradition = 20
+			west_gansu_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	cu_control_west_gansu = {
+		icon = mission_indian_soldier_elephant
+		position = 3
+		required_missions = { cu_strategic_ctrl }
+		trigger = {
+			HMI = { is_subject_of = ROOT }
+			west_gansu_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_mandate = 5
+
+		}
+	}
+
+	cu_break_mongols = {
+		icon = mission_indian_soldier_elephant
+		position = 8
+		required_missions = { cu_strategic_ctrl }
+		trigger = {
+			north_zungaria = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			zungaria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			turpan_kumul_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			central_mongolia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			inner_mongolia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			central_mongolia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			outer_mongolia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			xilin_gol_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			chahar_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			ordos_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			uliastai_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		provinces_to_highlight = {
+		}
+		effect = {
+			add_mandate = 10
+			add_country_modifier = {
+				name = "cu_steppe_conquered"
+				duration = -1
+			}
+		}
+	}
+
+}
